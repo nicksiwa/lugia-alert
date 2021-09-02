@@ -6,11 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var sweetalert2_1 = __importDefault(require("sweetalert2"));
 var dialog_1 = require("./dialog");
 var confirmed = function (element, result) {
-    console.log(">>>>>", result);
-    // if (result.value) {
-    //   element.removeAttribute("data-confirm");
-    //   element.click();
-    // }
+    if (result.value) {
+        element.removeAttribute("data-confirm");
+        element.click();
+    }
 };
 function showConfirmationDialog(element) {
     var title = element.getAttribute("data-confirm");
@@ -22,7 +21,7 @@ function showConfirmationDialog(element) {
         customClass: {
             confirmButton: "lugia-btn lugia-btn--confirm " + style.confirmButton,
             cancelButton: "lugia-btn lugia-btn--cancel lugia-btn--ghost",
-            container: "lugia-container",
+            popup: "lugia-popup",
         },
         buttonsStyling: false,
     });

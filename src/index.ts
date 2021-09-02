@@ -23,7 +23,7 @@ function showConfirmationDialog(element: HTMLElement) {
     customClass: {
       confirmButton: `lugia-btn lugia-btn--confirm ${style.confirmButton}`,
       cancelButton: "lugia-btn lugia-btn--cancel lugia-btn--ghost",
-      container: `lugia-container`,
+      popup: "lugia-popup",
     },
     buttonsStyling: false,
   });
