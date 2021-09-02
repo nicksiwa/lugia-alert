@@ -1,0 +1,59 @@
+.scale-up-center {
+  animation: scale-up-center 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.scale-down-center {
+  animation: scale-down-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+.lugia-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+  border-radius: 0.25rem;
+}
+.lugia-btn--primary {
+  background: #2563EB;
+  color: white;
+}
+.lugia-btn--secondary {
+  background: #D1D5DB;
+}
+.lugia-btn--success {
+  background: #059669;
+  color: white;
+}
+.lugia-btn--info {
+  background: #0284C7;
+  color: white;
+}
+.lugia-btn--warning {
+  background: #D97706;
+  color: white;
+}
+.lugia-btn--danger {
+  background: #DC2626;
+  color: white;
+}
+.lugia-btn--ghost:hover {
+  background: #D1D5DB;
+}

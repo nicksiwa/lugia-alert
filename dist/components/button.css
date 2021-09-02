@@ -1,0 +1,35 @@
+.lugia-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+  border-radius: 0.25rem;
+}
+.lugia-btn--primary {
+  background: #2563EB;
+  color: white;
+}
+.lugia-btn--secondary {
+  background: #D1D5DB;
+}
+.lugia-btn--success {
+  background: #059669;
+  color: white;
+}
+.lugia-btn--info {
+  background: #0284C7;
+  color: white;
+}
+.lugia-btn--warning {
+  background: #D97706;
+  color: white;
+}
+.lugia-btn--danger {
+  background: #DC2626;
+  color: white;
+}
+.lugia-btn--ghost:hover {
+  background: #D1D5DB;
+}
